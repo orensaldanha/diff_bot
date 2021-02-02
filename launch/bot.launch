@@ -1,0 +1,5 @@
+<launch>
+    <node name="joy_node" pkg="joy" type="joy_node" output="screen"/>
+    <node name="joy_to_twist" pkg="diff_bot" type="joy_to_twist.py" output="screen"/>
+    <node name="joy_to_uint8" pkg="diff_bot" type="joy_to_uint8.py" output="screen"/>
+</launch>
